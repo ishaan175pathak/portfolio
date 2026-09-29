@@ -1,0 +1,40 @@
+???? Step 1: Environment Setup
+Since you haven't written code yet, we need to establish the folder structure and basic styling framework.
+
+Action: Initialize the project structure.
+
+Dependencies needed: I recommend adding lucide-react for icons (for the resume download button) and framer-motion to handle the "space" animations smoothly.
+
+???? Step 2: Global Styles & Background
+
+- Create a global CSS file to handle the "Space" atmosphere.
+- Implementation: Use a fixed background with an animated gradient or a star-field effect using CSS keyframes. This ensures it stays consistent across all pages.
+
+???? Step 3: Home Page Construction (Component-Based)
+
+We will break the home page into three distinct components:
+
+- AboutMe Section: A two-column layout. Left side for text, right side for a stylized avatar/image.
+- Experience Section: Create a "Timeline" component. We'll use alternating layouts where the "Year" acts as a fixed point and the content shifts left and right of it.
+- Projects Section: A grid or list of cards. Each card will be a flex container prepared for hover effects later.
+
+???? Step 4: Resume Page & Navigation
+- Implement react-router-dom to create two routes: / (Home) and /resume.
+- Resume Page: Create a layout that displays the resume content clearly with a prominent "Download PDF" button.
+
+??? Future Scalability Note:
+To prepare for a future RAG (Retrieval-Augmented Generation) agent integration:
+- We will maintain a clean separation between "Content Data" and "UI Components".
+- Portfolio content (resume details, project descriptions) should be stored in structured files to allow easy indexing by the AI.
+
+???? Execution Plan (The Roadmap)
+| Phase     | Task                  | Description                                                                   |
+| :---      | :---                  | :---                                                                          |
+| Phase 1   | Foundation            | Setup Tailwind CSS, Icons (lucide-react), and Motion (framer-motion).         |
+| Phase 2   | Global Theme          | Implement the Space background and global typography.                         |
+| Phase 3   | Content Structure     | Organize resume/project data into structured objects for future RAG indexing. |
+| Phase 4   | Home - About          | Build the AboutMe component with the specific side-by-side layout.            |
+| Phase 5   | Home - Experience     | Build the Timeline logic for alternating content blocks.                      |
+| Phase 6   | Home - Projects       | Create the project cards and grid layout.                                     |
+| Phase 7   | Resume Page           | Create the Resume view and the download functionality.                        |
+| Future    | RAG Integration       | Connect a backend LLM to query the structured portfolio data.                 |

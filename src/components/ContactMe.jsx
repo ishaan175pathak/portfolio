@@ -36,7 +36,7 @@ const Contact = () => {
 
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/ishaan-pathak-1017951a4/"
           target="_blank"
           rel="noopener noreferrer"
           className="px-7 py-3 rounded-lg

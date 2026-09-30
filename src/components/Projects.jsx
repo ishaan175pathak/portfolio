@@ -28,7 +28,7 @@ const ProjectsList = [
       "Cross-encoder and AdamW training setup",
     ],
     tags: ["Python", "PyTorch", "BERT", "Cross-Encoders"],
-    links: GITHUB // TODO: replace with the repo link
+    links: `${GITHUB}/Personalized-Search-ReRanker`
   },
   {
     title: "Learning to Summarize from Human Feedback",
@@ -149,6 +149,15 @@ export default function CardGrid() {
 
   return (
     <div className="container mt-10 mb-10 mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-white">
+          Featured Projects
+        </h2>
+
+        <p className="mt-3 text-sm text-slate-400">
+          Click the cards to flip and view project details
+        </p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center gap-5 w-full mb-5">
         {visibleCards.map((card, index) => (
           <FlipCard

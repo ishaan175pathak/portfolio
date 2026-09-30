@@ -31,45 +31,6 @@ const ProjectsList = [
     links: GITHUB // TODO: replace with the repo link
   },
   {
-    title: "MedBot360 – AI Health Companion",
-    desc: `A MERN-based health dashboard for secure symptom tracking and personalized
-          recommendations. A Hugging Face-powered medical chatbot analyzes symptoms in
-          real time, and the full stack is containerized and deployed on AWS.`,
-    highlights: [
-      "Serves 200+ users",
-      "Chatbot accuracy improved by 30%",
-      "Dockerized for high availability",
-    ],
-    tags: ["MERN", "Hugging Face", "Docker", "AWS"],
-    links: GITHUB // TODO: replace with the repo link
-  },
-  {
-    title: "FinWise – AI Financial Advisor",
-    desc: `A GPT-powered financial agent that analyzes Plaid data to give personalized
-          insights. Users can ask questions in natural language, answered through
-          LangChain retrieval, and explore results on a React + Chart.js dashboard.`,
-    highlights: [
-      "Redis caching for low-latency analytics",
-      "Natural language financial queries",
-      "Improved decision-making by 40%",
-    ],
-    tags: ["React", "LangChain", "Redis", "AWS"],
-    links: GITHUB // TODO: replace with the repo link
-  },
-  {
-    title: "Anonymous Essay Grading Platform",
-    desc: `A web app for anonymous essay submission and grading, so evaluations stay
-          free of bias. A Gen AI model grades essays alongside human reviewers so the
-          two can be benchmarked against each other.`,
-    highlights: [
-      "Used by 50+ students",
-      "25% better grading consistency",
-      "40% less manual evaluation time",
-    ],
-    tags: ["Spring Boot", "Kafka", "Docker", "AWS"],
-    links: GITHUB // TODO: replace with the repo link
-  },
-  {
     title: "Learning to Summarize from Human Feedback",
     desc: `A notebook-based exploration of training summarization models with human
           preference feedback (RLHF). It walks through the reward modeling and policy
@@ -80,7 +41,45 @@ const ProjectsList = [
       "Documented in Jupyter notebooks",
     ],
     tags: ["Python", "PyTorch", "NLP", "RLHF"],
-    links: `${GITHUB}/learning-to-summarize-from-human-feedback-`
+    links: `${GITHUB}/learning-to-summarize-from-human-feedback`
+  },
+  {
+    title: "Self-Attention From Scratch (TensorFlow)",
+    desc: `Attention mechanisms built by hand in TensorFlow, without high-level layers
+          like MultiHeadAttention, to understand how Transformers work internally.
+          Separate branches cover text, image, and video models.`,
+    highlights: [
+      "Scaled dot-product attention implemented manually",
+      "Text (IMDB Reviews) and image (CIFAR-10) experiments",
+      "Three independent branches: text, image, and video",
+    ],
+    tags: ["Python", "TensorFlow", "NLP", "Attention"],
+    links: `${GITHUB}/transformers-implementation-from-scratch`
+  },
+  {
+    title: "Mobile App User Classification with KNN",
+    desc: `A pipeline that predicts whether app users are premium subscribers from
+          behavioral and device data. It uses a noisy Kaggle dataset of 100k+ event
+          records, aggregated into user-level features.`,
+    highlights: [
+      "Event-level to user-level feature engineering",
+      "Median imputation and StandardScaler preprocessing",
+      "KNN compared at K = 5, 11, and 21 using accuracy, precision, and recall",
+    ],
+    tags: ["Python", "Scikit-learn", "Pandas", "KNN"],
+    links: `${GITHUB}/Customer-Segmentation`
+  },
+  {
+    title: "Chest MRI Segmentation with 3D U-Net",
+    desc: `A 3D U-Net built in PyTorch for volumetric segmentation of chest MRI
+          scans, documented in a Jupyter notebook.`,
+    highlights: [
+      "3D U-Net architecture for volumetric data",
+      "Implemented in PyTorch",
+      "Documented in a Jupyter notebook",
+    ],
+    tags: ["Python", "PyTorch", "3D U-Net", "Medical Imaging", "Segmentation"],
+    links: `${GITHUB}/chest-mri-segmentation`
   }
 ]
 
@@ -89,7 +88,7 @@ function FlipCard({ title, tags, desc, highlights, links }) {
 
   return (
     <div
-      className="h-[60vh] w-[25vw] [perspective:1000px] cursor-pointer"
+      className="h-[28rem] w-full max-w-sm sm:h-[60vh] [perspective:1000px] cursor-pointer"
       onClick={() => setIsFlipped(!isFlipped)}
     >
       {/* Inner Card Wrapper */}
@@ -100,11 +99,11 @@ function FlipCard({ title, tags, desc, highlights, links }) {
           <div>
             <h3 className="text-2xl font-bold">{title}</h3>
           </div>
-          <span className="text-xs font-semibold uppercase opacity-70 p-2">
+          <div className="flex flex-wrap gap-1 text-xs font-semibold uppercase opacity-70 p-2">
             {tags.map((tag, index) => (
-              <span key={index} className="bg-blue-800 h-fit text-white text-xs px-2 py-1 rounded-2xl mr-1">{tag}</span>
+              <span key={index} className="bg-blue-800 h-fit text-white text-xs px-2 py-1 rounded-2xl">{tag}</span>
             ))}
-          </span>
+          </div>
         </div>
 
         {/* BACK SIDE */}

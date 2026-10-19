@@ -15,13 +15,13 @@ const experiences = [
     desc: "Built a web app for anonymous essay submissions used by 50+ students. Integrated a Gen AI model to benchmark automated grading against human assessments, improving consistency by 25% and cutting manual evaluation time by 40%."
   },
   {
-    role: "Junior AI & ML Engineer",
+    role: "AI/ML & Data Engineer",
     company: "Essar Agro",
     period: "July 2023 - July 2024",
     desc: "Cleaned and standardized 1M+ procurement records across JSON, Excel, and CSV formats through a unified ingestion pipeline. Developed LSTM/GRU models to automate livestock medication dosing from real-time client text data. Built Docker and GitHub Actions CI/CD workflows through hands-on implementation and testing."
   },
   {
-    role: "Machine Learning Engineer",
+    role: "Junior Machine Learning Engineer",
     company: "GenieTalk.ai",
     period: "June 2022 - February 2023",
     desc: "Developed text classification models with TensorFlow and scikit-learn, deployed them on AWS, and built APIs for model integration that improved response times by 20%."

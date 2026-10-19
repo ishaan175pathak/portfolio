@@ -4,6 +4,19 @@ const GITHUB = "https://github.com/ishaan175pathak";
 
 const ProjectsList = [
   {
+    title: "Building Segmentation & Geospatial Extraction",
+    desc: `An end-to-end inference pipeline for building segmentation and automated mask-to-polygon 
+          conversion for geospatial analysis. The system utilizes an ensemble of U-Net and 
+          SegFormer-B0 to achieve high-accuracy building extraction.`,
+    highlights: [
+      "94.20% Dice & 89.03% IoU on WHU building segmentation",
+      "Automated mask-to-polygon conversion for GeoJSON output",
+      "0.86 F1 at 0.5 IoU for building-level extraction",
+    ],
+    tags: ["PyTorch", "U-Net", "SegFormer", "OpenCV", "GeoJSON"],
+    links: `${GITHUB}/Satellite-Intelligence-Geospatial-Computer-Vision`
+  },
+  {
     title: "Brain Tumor Detection with YOLOv11",
     desc: `A real-time deep learning system that detects brain tumors in MRI scans
           using YOLOv11. Built as part of my computer vision research at Lawrence

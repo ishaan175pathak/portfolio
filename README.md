@@ -542,9 +542,9 @@ Unless otherwise stated, the portfolio content, personal information, resume, an
 
 AI/ML Engineer • Computer Vision Engineer • Machine Learning Researcher • Software Engineer
 
-* **GitHub:** ![GitHub Link](https://github.com/ishaan175pathak)
-* **Email:** ![ishaan175pathak@gmail.com](mailto:ishaan175pathak@gmail.com)
-* **LinkedIn:** ![LinkedIn URL](https://www.linkedin.com/in/ishaan-pathak-1017951a4/)
+* **GitHub:** [GitHub Link](https://github.com/ishaan175pathak)
+* **Email:** [ishaan175pathak@gmail.com](mailto:ishaan175pathak@gmail.com)
+* **LinkedIn:** [LinkedIn URL](https://www.linkedin.com/in/ishaan-pathak-1017951a4/)
 
 ---
 

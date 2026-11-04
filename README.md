@@ -6,7 +6,7 @@ The portfolio is designed to present my experience, research interests, technica
 
 ## 🌐 Portfolio
 
-**Live Portfolio:** [Add deployed portfolio URL]
+**Live Portfolio:** ![portfolio URL](https://ishaanpathak-portfolio.vercel.app/)
 
 **GitHub Repository:** https://github.com/ishaan175pathak/portfolio
 
@@ -542,9 +542,9 @@ Unless otherwise stated, the portfolio content, personal information, resume, an
 
 AI/ML Engineer • Computer Vision Engineer • Machine Learning Researcher • Software Engineer
 
-* **GitHub:** https://github.com/ishaan175pathak
-* **Email:** [ishaan175pathak@gmail.com](mailto:ishaan175pathak@gmail.com)
-* **LinkedIn:** [Add/verify LinkedIn URL]
+* **GitHub:** ![GitHub Link](https://github.com/ishaan175pathak)
+* **Email:** ![ishaan175pathak@gmail.com](mailto:ishaan175pathak@gmail.com)
+* **LinkedIn:** ![LinkedIn URL](https://www.linkedin.com/in/ishaan-pathak-1017951a4/)
 
 ---
 

@@ -6,7 +6,7 @@ The portfolio is designed to present my experience, research interests, technica
 
 ## 🌐 Portfolio
 
-**Live Portfolio:** ![portfolio URL](https://ishaanpathak-portfolio.vercel.app/)
+**Live Portfolio:** [portfolio URL](https://ishaanpathak-portfolio.vercel.app/)
 
 **GitHub Repository:** https://github.com/ishaan175pathak/portfolio
 
